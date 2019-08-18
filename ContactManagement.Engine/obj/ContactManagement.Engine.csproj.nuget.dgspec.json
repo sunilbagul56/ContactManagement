@@ -1,0 +1,206 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Engine\\ContactManagement.Engine.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Domain\\ContactManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Domain\\ContactManagement.Domain.csproj",
+        "projectName": "ContactManagement.Domain",
+        "projectPath": "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Domain\\ContactManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\sunil.bagul\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sunil.bagul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://coyote.pkgs.visualstudio.com/_packaging/Coyote.VSTS/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Engine\\ContactManagement.Engine.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Engine\\ContactManagement.Engine.csproj",
+        "projectName": "ContactManagement.Engine",
+        "projectPath": "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Engine\\ContactManagement.Engine.csproj",
+        "packagesPath": "C:\\Users\\sunil.bagul\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Engine\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sunil.bagul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://coyote.pkgs.visualstudio.com/_packaging/Coyote.VSTS/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Domain\\ContactManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Domain\\ContactManagement.Domain.csproj"
+              },
+              "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Storage\\ContactManagement.Storage.csproj": {
+                "projectPath": "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Storage\\ContactManagement.Storage.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Storage\\ContactManagement.Storage.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Storage\\ContactManagement.Storage.csproj",
+        "projectName": "ContactManagement.Storage",
+        "projectPath": "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Storage\\ContactManagement.Storage.csproj",
+        "packagesPath": "C:\\Users\\sunil.bagul\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Storage\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sunil.bagul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://coyote.pkgs.visualstudio.com/_packaging/Coyote.VSTS/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Domain\\ContactManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\sunil.bagul\\source\\repos\\ContactManagement\\ContactManagement.Domain\\ContactManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.6.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

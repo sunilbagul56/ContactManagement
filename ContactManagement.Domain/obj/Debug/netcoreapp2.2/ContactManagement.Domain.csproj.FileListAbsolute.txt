@@ -1,0 +1,9 @@
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Domain\bin\Debug\netcoreapp2.2\ContactManagement.Domain.deps.json
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Domain\bin\Debug\netcoreapp2.2\ContactManagement.Domain.dll
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Domain\bin\Debug\netcoreapp2.2\ContactManagement.Domain.pdb
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Domain\obj\Debug\netcoreapp2.2\ContactManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Domain\obj\Debug\netcoreapp2.2\ContactManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Domain\obj\Debug\netcoreapp2.2\ContactManagement.Domain.AssemblyInfo.cs
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Domain\obj\Debug\netcoreapp2.2\ContactManagement.Domain.dll
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Domain\obj\Debug\netcoreapp2.2\ContactManagement.Domain.pdb
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Domain\obj\Debug\netcoreapp2.2\ContactManagement.Domain.csprojAssemblyReference.cache

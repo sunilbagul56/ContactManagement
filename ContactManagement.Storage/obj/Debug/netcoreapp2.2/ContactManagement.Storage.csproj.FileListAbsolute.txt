@@ -1,0 +1,12 @@
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Storage\bin\Debug\netcoreapp2.2\ContactManagement.Storage.deps.json
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Storage\bin\Debug\netcoreapp2.2\ContactManagement.Storage.dll
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Storage\bin\Debug\netcoreapp2.2\ContactManagement.Storage.pdb
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Storage\bin\Debug\netcoreapp2.2\ContactManagement.Domain.dll
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Storage\bin\Debug\netcoreapp2.2\ContactManagement.Domain.pdb
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Storage\obj\Debug\netcoreapp2.2\ContactManagement.Storage.csprojAssemblyReference.cache
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Storage\obj\Debug\netcoreapp2.2\ContactManagement.Storage.csproj.CoreCompileInputs.cache
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Storage\obj\Debug\netcoreapp2.2\ContactManagement.Storage.AssemblyInfoInputs.cache
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Storage\obj\Debug\netcoreapp2.2\ContactManagement.Storage.AssemblyInfo.cs
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Storage\obj\Debug\netcoreapp2.2\ContactManagement.Storage.csproj.CopyComplete
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Storage\obj\Debug\netcoreapp2.2\ContactManagement.Storage.dll
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Storage\obj\Debug\netcoreapp2.2\ContactManagement.Storage.pdb

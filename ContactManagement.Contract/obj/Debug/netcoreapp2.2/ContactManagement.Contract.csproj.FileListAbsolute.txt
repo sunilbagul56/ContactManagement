@@ -1,0 +1,8 @@
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Contract\bin\Debug\netcoreapp2.2\ContactManagement.Contract.deps.json
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Contract\bin\Debug\netcoreapp2.2\ContactManagement.Contract.dll
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Contract\bin\Debug\netcoreapp2.2\ContactManagement.Contract.pdb
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Contract\obj\Debug\netcoreapp2.2\ContactManagement.Contract.csproj.CoreCompileInputs.cache
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Contract\obj\Debug\netcoreapp2.2\ContactManagement.Contract.AssemblyInfoInputs.cache
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Contract\obj\Debug\netcoreapp2.2\ContactManagement.Contract.AssemblyInfo.cs
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Contract\obj\Debug\netcoreapp2.2\ContactManagement.Contract.dll
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Contract\obj\Debug\netcoreapp2.2\ContactManagement.Contract.pdb
