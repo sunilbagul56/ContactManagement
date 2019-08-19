@@ -35,14 +35,14 @@ namespace ContactManagement.API.Controllers
 
         // GET: api/Contact/GetAllContacts
         [HttpGet]
-        [Route("GetAllContacts")]
-        public ActionResult<IEnumerable<Contact>> GetAllContacts()
+        [Route("GetAllContactsAsync")]
+        public async Task<ActionResult<IEnumerable<Contact>>> GetAllContactsAsync()
         {
             try
             {
-                Log.Information($"{nameof(ContactController)} - {nameof(GetAllContacts)}");
-                var contact = _contactEngine.GetAllContacts();
-                return Ok(contact);
+                Log.Information($"{nameof(ContactController)} - {nameof(GetAllContactsAsync)}");
+                var contacts = await _contactEngine.GetAllContactsAsync().ConfigureAwait(false);
+                return Ok(contacts);
             }
             catch (Exception e)
             {
@@ -52,15 +52,15 @@ namespace ContactManagement.API.Controllers
 
         // GET: api/Contact/GetContactById/5
         [HttpGet]
-        [Route("GetContactById")]
-        public ActionResult<Contact> GetContactById(int id)
+        [Route("GetContactByIdAsync")]
+        public async Task<ActionResult<Contact>> GetContactByIdAsync(int id)
         {
             try
             {
                 if (id > 0)
                 {
-                    Log.Information($"{nameof(ContactController)} - {nameof(GetContactById)} - Request- ContactId: {id}");
-                    var contact = _contactEngine.GetContactById(id);
+                    Log.Information($"{nameof(ContactController)} - {nameof(GetContactByIdAsync)} - Request- ContactId: {id}");
+                    var contact = await _contactEngine.GetContactByIdAsync(id).ConfigureAwait(false);
                     return Ok(contact);
                 }
                 else

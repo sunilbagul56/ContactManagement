@@ -7,8 +7,8 @@ namespace ContactManagement.Storage.Repository
 
     public interface IContactRepository
     {
-        IEnumerable<Contact> GetAllContacts();
-        Contact GetContactById(int id);
+        Task<IEnumerable<Contact>> GetAllContactsAsync();
+        Task<Contact> GetContactByIdAsync(int id);
         Task<bool> AddContactAsync(Contact contact);
         Task<bool> UpdateContactAsync(Contact contact);
         Task<bool> DeleteContactAsync(int id);

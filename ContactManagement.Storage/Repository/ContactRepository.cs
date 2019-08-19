@@ -3,6 +3,7 @@ namespace ContactManagement.Storage.Repository
 {
     using ContactManagement.Domain.Models;
     using ContactManagement.Storage.DbContexts;
+    using Microsoft.EntityFrameworkCore;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -27,14 +28,14 @@ namespace ContactManagement.Storage.Repository
 
         #region "Public methods"
 
-        public IEnumerable<Contact> GetAllContacts()
+        public async Task<IEnumerable<Contact>> GetAllContactsAsync()
         {
-           return _contactDbContext.Contacts.ToList();
+           return await _contactDbContext.Contacts.ToListAsync().ConfigureAwait(false);
         }
 
-        public Contact GetContactById(int id)
+        public async Task<Contact> GetContactByIdAsync(int id)
         {
-            return _contactDbContext.Contacts.Where(c => c.ID == id).FirstOrDefault();
+            return await _contactDbContext.Contacts.Where(c => c.ID == id).FirstOrDefaultAsync().ConfigureAwait(false);
         }
 
         public async Task<bool> AddContactAsync(Contact contact)
@@ -45,7 +46,7 @@ namespace ContactManagement.Storage.Repository
         }
         public async Task<bool> UpdateContactAsync(Contact contact)
         {
-            var contactToUpdate = GetContactById(contact.ID);
+            var contactToUpdate = await GetContactByIdAsync(contact.ID);
             contactToUpdate.FirstName = contact.FirstName;
             contactToUpdate.LastName = contact.LastName;
             contactToUpdate.Email = contact.Email;
@@ -58,7 +59,7 @@ namespace ContactManagement.Storage.Repository
 
         public async Task<bool> DeleteContactAsync(int id)
         {
-            var contactToDelete = GetContactById(id);
+            var contactToDelete = await GetContactByIdAsync(id);
             _contactDbContext.Contacts.Remove(contactToDelete);
             await _contactDbContext.SaveChangesAsync().ConfigureAwait(false);
             return true;

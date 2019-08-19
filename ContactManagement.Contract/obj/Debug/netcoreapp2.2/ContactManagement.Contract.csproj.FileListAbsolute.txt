@@ -6,3 +6,4 @@ C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Contract\o
 C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Contract\obj\Debug\netcoreapp2.2\ContactManagement.Contract.AssemblyInfo.cs
 C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Contract\obj\Debug\netcoreapp2.2\ContactManagement.Contract.dll
 C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Contract\obj\Debug\netcoreapp2.2\ContactManagement.Contract.pdb
+C:\Users\sunil.bagul\source\repos\ContactManagement\ContactManagement.Contract\obj\Debug\netcoreapp2.2\ContactManagement.Contract.csprojAssemblyReference.cache

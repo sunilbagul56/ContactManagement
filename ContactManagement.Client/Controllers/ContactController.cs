@@ -40,7 +40,7 @@ namespace ContactManagement.Client.Controllers
                 client.DefaultRequestHeaders.Clear();
                 client.BaseAddress = new Uri(CONTACT_BASE_URI);
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage Response = await client.GetAsync("api/contact/GetAllContacts");
+                HttpResponseMessage Response = await client.GetAsync("api/contact/GetAllContactsAsync");
 
                 //Check response status
                 if (Response.IsSuccessStatusCode)
@@ -67,7 +67,7 @@ namespace ContactManagement.Client.Controllers
                 client.BaseAddress = new System.Uri(CONTACT_BASE_URI);
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                HttpResponseMessage Response = await client.GetAsync("api/contact/GetContactById?Id=" + contactId);
+                HttpResponseMessage Response = await client.GetAsync("api/contact/GetContactByIdAsync?Id=" + contactId);
 
                 if (Response.IsSuccessStatusCode)
                 {
@@ -108,9 +108,9 @@ namespace ContactManagement.Client.Controllers
 
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpRequestMessage request = HttpRequestHelper.CreateHttpRequest(HttpMethod.Post, new System.Uri(CONTACT_BASE_URI + "api/Contact/AddContact"), contact);
+                HttpRequestMessage Request = HttpRequestHelper.CreateHttpRequest(HttpMethod.Post, new System.Uri(CONTACT_BASE_URI + "api/Contact/AddContact"), contact);
 
-                HttpResponseMessage Response = await client.SendAsync(request);
+                HttpResponseMessage Response = await client.SendAsync(Request);
 
                 if (Response.IsSuccessStatusCode)
                 {
@@ -148,9 +148,9 @@ namespace ContactManagement.Client.Controllers
 
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpRequestMessage request = HttpRequestHelper.CreateHttpRequest(HttpMethod.Put, new System.Uri(CONTACT_BASE_URI + "api/Contact/UpdateContact"), contact);
+                HttpRequestMessage Request = HttpRequestHelper.CreateHttpRequest(HttpMethod.Put, new System.Uri(CONTACT_BASE_URI + "api/Contact/UpdateContact"), contact);
 
-                HttpResponseMessage Response = await client.SendAsync(request);
+                HttpResponseMessage Response = await client.SendAsync(Request);
 
                 if (Response.IsSuccessStatusCode)
                 {

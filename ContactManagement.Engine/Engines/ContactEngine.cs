@@ -28,28 +28,28 @@ namespace ContactManagement.Engine.Engines
 
         #region "Public methods"
 
-        public IEnumerable<Contact> GetAllContacts()
+        public async Task<IEnumerable<Contact>> GetAllContactsAsync()
         {
             try
             {
-                return _contactRepository.GetAllContacts();
+                return await _contactRepository.GetAllContactsAsync().ConfigureAwait(false);
             }
             catch (Exception ex)
             {
-                Log.Information($"{nameof(ContactEngine)} - {nameof(GetAllContacts)}- Unable to fetch cantacts- {ex.Message}");
+                Log.Information($"{nameof(ContactEngine)} - {nameof(GetAllContactsAsync)}- Unable to fetch cantacts- {ex.Message}");
                 throw new Exception(ex.Message, ex);
             }
         }
 
-        public Contact GetContactById(int id)
+        public async Task<Contact> GetContactByIdAsync(int id)
         {
             try
             {
-                return _contactRepository.GetContactById(id);
+                return await _contactRepository.GetContactByIdAsync(id).ConfigureAwait(false);
             }
             catch (Exception ex)
             {
-                Log.Information($"{nameof(ContactEngine)} - {nameof(GetContactById)}- Unable to fetch cantact- {ex.Message}");
+                Log.Information($"{nameof(ContactEngine)} - {nameof(GetContactByIdAsync)}- Unable to fetch cantact- {ex.Message}");
                 throw new Exception(ex.Message, ex);
             }
         }
