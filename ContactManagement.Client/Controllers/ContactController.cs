@@ -1,12 +1,16 @@
 ﻿
 namespace ContactManagement.Client.Controllers
 {
+    using ContactManagement.Client.Models;
     using ContactManagement.Domain.Models;
+    using ContactManagement.MvcClient.Helper;
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Mvc.Filters;
     using Newtonsoft.Json;
     using Serilog;
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics;
     using System.Net.Http;
     using System.Net.Http.Headers;
     using System.Threading.Tasks;
@@ -105,7 +109,7 @@ namespace ContactManagement.Client.Controllers
 
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpRequestMessage request = CreateRequest(HttpMethod.Post, new System.Uri(CONTACT_BASE_URI + "api/Contact/AddContact"), contact);
+                HttpRequestMessage request = HttpRequestHelper.CreateHttpRequest(HttpMethod.Post, new System.Uri(CONTACT_BASE_URI + "api/Contact/AddContact"), contact);
 
                 HttpResponseMessage Response = await client.SendAsync(request);
 
@@ -145,7 +149,7 @@ namespace ContactManagement.Client.Controllers
 
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpRequestMessage request = CreateRequest(HttpMethod.Put, new System.Uri(CONTACT_BASE_URI + "api/Contact/UpdateContact"), contact);
+                HttpRequestMessage request = HttpRequestHelper.CreateHttpRequest(HttpMethod.Put, new System.Uri(CONTACT_BASE_URI + "api/Contact/UpdateContact"), contact);
 
                 HttpResponseMessage Response = await client.SendAsync(request);
 
@@ -202,22 +206,12 @@ namespace ContactManagement.Client.Controllers
 
         #endregion
 
-        #region "Other Methods"
-        internal static HttpRequestMessage CreateRequest<TRequest>(HttpMethod verb, Uri uri, TRequest requestContent)
+        #region "Handle Error"
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
         {
-            var request = new HttpRequestMessage()
-            {
-                RequestUri = uri,
-                Method = verb
-            };
-
-            string content = JsonConvert.SerializeObject(requestContent);
-            request.Content = new StringContent(content);
-            request.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-
-            return request;
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
         #endregion
     }
 }

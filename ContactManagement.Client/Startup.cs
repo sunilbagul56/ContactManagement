@@ -1,6 +1,7 @@
 ﻿
 namespace ContactManagement.Client
 {
+    using ContactManagement.Client.Filters;
     using ContactManagement.MvcClient.Filters;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
@@ -26,6 +27,7 @@ namespace ContactManagement.Client
             {
                 //Register filters
                 options.Filters.AddService<ValidateModelAttribute>();
+                options.Filters.AddService<CustomExceptionFilterAttribute>();
             })
             .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
@@ -38,6 +40,7 @@ namespace ContactManagement.Client
 
             services.AddSingleton<ILogger>(x => Log.Logger);
             services.AddScoped<ValidateModelAttribute>();
+            services.AddScoped<CustomExceptionFilterAttribute>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,7 +52,7 @@ namespace ContactManagement.Client
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Contact/Error");
                 app.UseHsts();
             }
 
