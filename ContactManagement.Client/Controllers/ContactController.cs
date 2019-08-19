@@ -5,7 +5,6 @@ namespace ContactManagement.Client.Controllers
     using ContactManagement.Domain.Models;
     using ContactManagement.MvcClient.Helper;
     using Microsoft.AspNetCore.Mvc;
-    using Microsoft.AspNetCore.Mvc.Filters;
     using Newtonsoft.Json;
     using Serilog;
     using System;
